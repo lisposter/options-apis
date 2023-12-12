@@ -1,0 +1,36 @@
+{
+  "name": "options-apis",
+  "version": "1.0.0",
+  "description": "Wrap for options apis",
+  "devDependencies": {
+    "esno": "^4.0.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "start": "esno src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lisposter/options-apis.git"
+  },
+  "author": "lisposter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lisposter/options-apis/issues"
+  },
+  "homepage": "https://github.com/lisposter/options-apis#readme"
+}
